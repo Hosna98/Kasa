@@ -7,7 +7,7 @@ const Header = () => {
       <img src={logoKasa} alt="logo Kasa" />
       <nav>
         <ul>
-          <NavLink to= "/Accueil" className={({isActive}) => (isActive ? "nav-underline" : "")}>
+          <NavLink to= "/Acceuil" className={({isActive}) => (isActive ? "nav-underline" : "")}>
             <li>Acceuil</li>
           </NavLink>
 
