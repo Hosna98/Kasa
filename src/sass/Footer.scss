@@ -1,0 +1,23 @@
+
+
+  .footer {
+    
+    width: 100%;
+    background-color: black; /* Arrière-plan noir */
+    text-align: center; /* Centrer le contenu */
+    padding: 50px; /* Espacement intérieur */
+    color: white;
+    flex-direction: column;
+    margin-top:30px;
+    
+}
+
+.footer-logo {
+    width: 150px; /* Taille de l'image (tu peux ajuster) */
+    color: white; /* Couleur du texte en blanc */
+}
+
+footer h3 {
+    margin-top: 10px; /* Espacement entre l'image et le texte */
+    font-family: Montserrat;
+}

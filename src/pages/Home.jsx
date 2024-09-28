@@ -6,6 +6,7 @@ import Gallery from './Gallery';
 
 import Thumb from "../components/Thumb";
 import logements from "../data/logements.json"
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -20,8 +21,10 @@ const Home = () => {
               <div className="gallery">
                   <Thumb logements = {logements}/>
               </div>
+
+              <Footer />
           </div>
-        
+       
         
        
         
