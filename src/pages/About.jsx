@@ -1,5 +1,6 @@
 import Bannerapropos from "../components/Bannerapropos";
 import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 import aproposData from "../data/apropos.json";
 
 
@@ -13,6 +14,8 @@ const About = () => {
                     {item.text}
                 </Collapse>
             ))}
+
+            <Footer />
         </div>
         
     );
