@@ -7,6 +7,7 @@ import Gallery from './Gallery';
 import Thumb from "../components/Thumb";
 import logements from "../data/logements.json"
 import Footer from "../components/Footer";
+import Bannerimg from "../components/Bannerimg";
 
 
 const Home = () => {
@@ -14,13 +15,11 @@ const Home = () => {
         
           <div className="home"> 
             <div className="banner">
-                <img src="../src/assets/image/BannerHome.png" alt="image montagnes" className="banner-img" />
-                <h1 className="banner-title">Chez vous, partout et ailleur</h1>            
-              </div>  
-        
-              <div className="gallery">
-                  <Thumb logements = {logements}/>
-              </div>
+              <Bannerimg />
+            </div>
+            <div className="gallery">
+              <Thumb logements = {logements}/>
+            </div>
 
               <Footer />
           </div>
