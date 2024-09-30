@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import svgFleche from "../assets/image/arrow.png";
+import Fleche from "../assets/image/arrow.png";
 import PropTypes from "prop-types";
 
 const Collapse = ({ title, children }) => {
@@ -14,7 +14,7 @@ const Collapse = ({ title, children }) => {
         <div className="headCollapse" onClick={handleToggle}>
           <h3>{title}</h3>
           <img
-            src={svgFleche}
+            src={Fleche}
             alt="flèche"
             className={`arrow ${isVisible ? "down" : ""}`}
           />

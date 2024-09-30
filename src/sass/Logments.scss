@@ -127,7 +127,7 @@
 .host {
     display: flex;
 }
-img {
+.host-picture{
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -161,3 +161,23 @@ img {
     }
 
 }
+
+.rental-informations{
+      display: flex;
+      gap: 70px;
+      margin-top: 25px;
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        padding: 10px 0;
+        margin-top: 0;
+      }
+      li {
+        list-style: none;
+        
+      }
+}
+  
+
+
