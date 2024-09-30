@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Location from "../pages/Location";
 import E404 from "../pages/E404";
+import Footer from "./Footer";
 
 
 const App = () => {
@@ -13,9 +14,10 @@ const App = () => {
       <Routes>
         <Route path="/Acceuil" element={<Home />} />
         <Route path="/Apropos" element={<About />} />
-        <Route path="/Location/:id"element={<Location />} />
+        <Route path="/Location/:id/*"element={<Location />} />
         <Route path="*"element={<E404 />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

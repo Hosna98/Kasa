@@ -1,15 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
 import PropTypes from "prop-types";
 import arrowLeft from "../assets/image/arrow_left.png";
 import arrowRight from "../assets/image/arrow_right.png";

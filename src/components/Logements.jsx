@@ -5,7 +5,7 @@ import locations from "../data/locations.json";
 import TagList from "./TagsList";
 import Rating from "./Rating";
 import Collapse from "./Collapse";
-import Footer from "./Footer";
+
 
 const Logements = () => {
   const { id } = useParams();
@@ -48,7 +48,7 @@ const Logements = () => {
               </ul>
             </Collapse>
         </div>
-        <Footer />
+     
     </div>
   );
 };

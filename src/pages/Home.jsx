@@ -2,7 +2,7 @@
 
 import Thumb from "../components/Thumb";
 import locations from "../data/locations.json";
-import Footer from "../components/Footer";
+
 import Bannerimg from "../components/Bannerimg";
 
 
@@ -17,7 +17,7 @@ const Home = () => {
               <Thumb locations = {locations}/>
             </div>
 
-              <Footer />
+            
           </div>
        
         

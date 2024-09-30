@@ -1,15 +1,16 @@
 
 
   .footer {
-    
-   
     background-color: black; /* Arrière-plan noir */
     text-align: center; /* Centrer le contenu */
     padding: 50px; /* Espacement intérieur */
     color: white;
-    flex-direction: column;
-    margin-top:30px;
+    margin-top:30px; 
+    @media screen and (max-width: 768px){
+      height: 180px;
+    }
     
+  
 }
 
 .footer-logo {
@@ -18,6 +19,7 @@
 }
 
 footer h3 {
-    margin-top: 10px; /* Espacement entre l'image et le texte */
+    font-size: 1.2rem;
     font-family: Montserrat;
+    font-weight: 500;
 }
