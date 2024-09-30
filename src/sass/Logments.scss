@@ -1,0 +1,113 @@
+.logements{
+  height: 80%;
+  border-radius: 25px;
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  width: 95%;
+}
+.carrousel {
+    position: relative;
+    
+}
+.slider {
+    width: 100%;
+    height: 415px;
+    border-radius: 25px;
+    margin-top: 40px;
+    object-fit: cover;
+}
+
+.arrowLeft{
+    position: absolute;
+      top: 140px;
+      left: 0px;
+      height: 78px;
+      width: 46px;
+      padding-left: 20px;
+      cursor: pointer;
+      @media screen and (max-width:768px) {
+        height: 30px;
+        top: 165px;
+        padding-left: 10px;
+        }
+}
+
+.arrowRight{
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    height: 78px;
+    width: 46px;
+    padding-right: 20px;
+    cursor: pointer;
+    @media screen and (max-width:768px) {
+        height: 30px;
+        top: 165px;
+        padding-right: 10px;
+        }
+}
+
+
+
+
+
+.slide-indicator {
+    position: absolute;
+    bottom: 7%;
+    right: 50%;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: white;
+  }
+
+.rental_presentation{
+    width: 90%;
+ }
+
+.rental-title{
+    font-size: 36px;
+    color: #ff6060;
+    font-style: normal;
+    font-weight: 500;
+    font-family: Montserrat;
+    margin: 0;
+    
+    
+}
+
+.rental-location{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.rental-Tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+ 
+
+}
+.tagList{
+    list-style: none;
+}
+.tagList .tag {
+    align-items: center;
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 10px;
+    padding: 5px 30px;
+    text-align: center;
+   
+    font-family: Montserrat;
+    list-style: none;
+    white-space: nowrap;
+}

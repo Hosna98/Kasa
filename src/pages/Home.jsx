@@ -1,11 +1,7 @@
-/*
-import Card from "../components/Thumb";
-import Gallery from './Gallery';
 
-*/
 
 import Thumb from "../components/Thumb";
-import logements from "../data/logements.json"
+import locations from "../data/locations.json";
 import Footer from "../components/Footer";
 import Bannerimg from "../components/Bannerimg";
 
@@ -18,7 +14,7 @@ const Home = () => {
               <Bannerimg />
             </div>
             <div className="gallery">
-              <Thumb logements = {logements}/>
+              <Thumb locations = {locations}/>
             </div>
 
               <Footer />
