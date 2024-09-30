@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import starFull from "../assets/image/star-active.png";
-import starEmpty from "../assets/image/star-inactive";
+import starEmpty from "../assets/image/star-inactive.png";
 
 const Rating = ({ rating }) => {
   const totalStars = 5;
@@ -29,3 +29,11 @@ Rating.propTypes = {
 };
 
 export default Rating;
+
+
+
+
+
+
+
+

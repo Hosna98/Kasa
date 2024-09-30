@@ -103,6 +103,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import Carrousel from "./Carrousel";
 import locations from "../data/locations.json";
 import TagList from "./TagsList";
+import Rating from "./Rating";
 
 const Logements = () => {
   const { id } = useParams();
@@ -126,7 +127,16 @@ const Logements = () => {
             </div>
           </div>
         </div>
-      
+        <div className="host-rating">
+            <div className="host">
+                <h3 className="host-name">{location.host.name}</h3>
+                <img src={location.host.picture} alt={location.title} />
+            </div>
+            <div className="rating">
+                <Rating rating = {parseInt(location.rating,10)}/>
+            </div>
+
+        </div>
     </div>
   );
 };
