@@ -1,20 +1,31 @@
 
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect } from "react"
 import Carrousel from "./Carrousel";
 import locations from "../data/locations.json";
 import TagList from "./TagsList";
 import Rating from "./Rating";
 import Collapse from "./Collapse";
+import E404 from "../pages/E404";
 
 
 const Logements = () => {
   const { id } = useParams();
-  
+  const navigate = useNavigate();
   const location = locations.find((item) => item.id === id); // Vérifie le type ici si nécessaire
 
+  useEffect(() => {
+    if (!location) {
+      navigate("/error404");
+    }
+  }, [location, navigate, id]); 
   if (!location) {
-    return <div>Location not found.</div>;
+    return <E404 />;
   }
+
+
+
+ 
 
   return (
     <div className="logements">
