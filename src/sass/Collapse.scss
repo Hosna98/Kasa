@@ -10,13 +10,9 @@
     max-width: 1240px;
     margin: 0 auto;
     width: 75%;
-    @media screen and (max-width: 768px) {
-      width: 335px;
-      height: 180px;
-      gap: 20px;
-      flex-direction: column;
-      align-items: center;
-    }
+    
+    
+}
     .headCollapse {
       position: relative;
       display: flex;
@@ -84,4 +80,4 @@
         margin-bottom: 30px;
       }
     }
-  }
+  

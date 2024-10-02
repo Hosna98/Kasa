@@ -8,6 +8,7 @@
 }
 .carrousel {
     position: relative;
+   
     
 }
 .slider {
@@ -16,20 +17,31 @@
     border-radius: 25px;
     margin-top: 40px;
     object-fit: cover;
+    @media screen and (max-width: 375px){
+    height: 30vh; /* 80% de la hauteur de l'écran */
+   
+    
+    }
 }
 
 .arrowLeft{
     position: absolute;
-      top: 140px;
-      left: 0px;
-      height: 78px;
-      width: 46px;
+    top: 140px;
+    left: 0px;
+    height: 7rem;
+    width: 96px;
+    margin-top: 60px;
       padding-left: 20px;
       cursor: pointer;
       @media screen and (max-width:768px) {
-        height: 30px;
-        top: 165px;
+        height: 24px;
+        width: 24px;
         padding-left: 10px;
+        }
+        @media screen and (max-width: 375px){
+            top: calc(20vh / 2); 
+            
+
         }
 }
 
@@ -37,14 +49,20 @@
     position: absolute;
     top: 140px;
     right: 0px;
-    height: 78px;
-    width: 46px;
+    height: 119px;
+    width: 96px;
+    margin-top: 60px;
     padding-right: 20px;
     cursor: pointer;
     @media screen and (max-width:768px) {
-        height: 30px;
-        top: 165px;
+        height: 24px;
+        width: 24px;
         padding-right: 10px;
+        }
+        @media screen and (max-width: 375px){
+            top: calc(20vh / 2); 
+            
+
         }
 }
 
@@ -74,6 +92,9 @@
     font-weight: 500;
     font-family: Montserrat;
     margin: 0;
+    @media screen and (max-width: 375px){
+        font-size: 18px;
+    }
     
     
 }
@@ -82,14 +103,18 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
-    
+    @media screen and (max-width: 375px){
+        font-size: 14px;
+    }
 }
 
 .rental-Tags{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
- 
+    @media screen and (max-width: 375px){
+        width: 84px;
+    }
 
 }
 .tagList{
@@ -117,11 +142,16 @@
     flex-direction: column;
     box-sizing: border-box;
     align-items: flex-end;
+    margin-top: -80px;
     @media screen and (max-width: 768px) {
+      margin-top: 20px;
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
       padding: 20px 0;
+      
+      
+      
     }
 }
 .host {
@@ -150,6 +180,7 @@
     height: 36px;
     @media screen and (max-width: 768px) {
       height: 18px;
+      width: 20px;
     }
 }
 
@@ -158,6 +189,7 @@
     height: 36px;
     @media screen and (max-width: 768px) {
       height: 18px;
+      width: 20px;
     }
 
 }

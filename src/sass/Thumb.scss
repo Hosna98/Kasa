@@ -7,8 +7,8 @@
       background: #F6F6F6;
       border-radius: 25px;
       padding: 56px 50px 43px;
-      margin-left: 80px ;
-      margin-right: 80px;
+      margin-left: 60px ;
+      margin-right: 60px;
 
       @media (max-width: 992px) {
         grid-template-columns: 1fr; /* Change to a single column */
@@ -16,7 +16,13 @@
     }
       @media (max-width: 768px) {
         background-color: #fff;
+       
       } 
+      @media screen and (max-width: 375px) {
+        align-items: center;
+        width: 335px;
+        margin-right:117px;
+      }
 
     }
 
@@ -34,8 +40,8 @@
         height: 340px;
         margin: 20px auto;
     }
-      @media (max-width: 768px) {
-        
+      @media (max-width: 375px) {
+       
     } 
 }
     .thumb::before {
@@ -53,6 +59,7 @@
         
         
     }
+    
       
   }
     

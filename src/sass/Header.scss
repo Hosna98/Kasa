@@ -1,4 +1,31 @@
 
+.home{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  @media screen and (max-width: 375px) {
+      align-items: center;
+      margin: 15px;
+      
+     
+    }
+}
+
+
+.home{
+  @media screen and (max-width:768px){
+    margin:20px;
+  }
+
+}
+
+.about{
+  @media screen and (max-width:768px){
+    margin: 20px;
+    margin-bottom: 29%;
+  }
+}
   .header{
     
     display: flex;
@@ -10,14 +37,48 @@
     align-items: flex-end;
     padding-top: 15px;
     padding-bottom: 20px;
-  
+    @media screen and (max-width: 768px) {
+      flex-direction: row; // Stack items vertically on smaller screens
+      
+    
+      @media screen and (max-width: 375px) {
+      width: 335px;
+      padding: 20px 0;
+      }
+
+    }
   }
+  
+      @media screen and (max-width: 768px) {
+        .header img{
+          width: 145px;
+        }
+       
+      
+    }
+   
+
+  
 
   .header ul {
-  display: flex; 
- 
+    display: flex; 
+      @media screen and (max-width: 1024px) {
+      justify-content: space-around;
+    
+        @media screen and (max-width: 375px) {
+          gap: 40px;
+          align-items: center;
 
+      
+        }
+      }
 
+  }
+  .navlik{
+    margin: auto;
+    @media screen and (max-width: 375px) {
+      margin-right :20px;
+    }
   }
   a{
     text-decoration: none;
@@ -28,14 +89,28 @@
     font-style: normal;
     margin-left: 50px;
     cursor: pointer;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      margin-left: 20px;
+    }
     &.nav-underline {
       text-decoration-line: underline;
+    }
+    @media screen and (max-width: 375px) {
+      flex-wrap: nowrap;
+      
     }
   }
 
   .header li {
     margin: 0 10px;
     list-style: none ;
+    @media screen and (max-width: 375px) {
+      width: 19px;
+      
+    }
   }
 
   
