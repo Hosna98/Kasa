@@ -6,22 +6,13 @@
   justify-content: center;
   position: relative;
   border-radius: 1.5625rem;
-  background: #F6F6F6;
   height: 223px;
   max-width: 1240px;
   margin-bottom: 30px;
-  @media screen and (max-width:1024px) {
-    height: 200px;
-   
-  }
-  @media screen and (max-width:768px) {
-    border-radius: 10px;
-  }
   @media screen and (max-width:375px) {
     margin-left: auto;
+    height: 111px;
   }
-  
-  
   .bannerImg{
     border-radius: 1.5625rem;
     object-fit: cover;
@@ -31,7 +22,8 @@
       border-radius: 10px;
      }
      @media screen and (max-width:375px) {
-    margin-left: auto;
+      width: 337px;
+      height: 111px;
   }
   }
   h1{
@@ -50,14 +42,13 @@
     @media screen and (max-width:768px) {
       display: flex;
       flex-direction: column;
-      
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 300;
       
       
      }
     @media screen and (max-width:375px) {
-      font-size: 1.7rem;
+    
       font-weight: 300;
       width: 225px;
      }
@@ -76,9 +67,10 @@
     opacity: 0.3;
     background: #000;
     mix-blend-mode: darken;
-    @media screen and (max-width:768px) {
-    border-radius: 10px;
-     }
+    @media screen and (max-width:375px) {
+      border-radius: 10px;
+      width: 336px;
+       }
   }
 
 }

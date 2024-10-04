@@ -2,7 +2,7 @@
     .gallery {
       grid-template-columns: repeat(3, 30%); /* Modifiez ceci pour que les images soient plus proches les unes des autres */
       grid-template-rows: auto;
-      gap: 35px; /* Modifiez ceci pour que les images soient plus proches les unes des autres */
+      gap: 39px; /* Modifiez ceci pour que les images soient plus proches les unes des autres */
       display: grid;
       background: #F6F6F6;
       border-radius: 25px;
@@ -10,18 +10,13 @@
       margin-left: 60px ;
       margin-right: 60px;
 
-      @media (max-width: 992px) {
-        grid-template-columns: 1fr; /* Change to a single column */
-        gap: 20px; /* Adjust the gap between images */
-    }
-      @media (max-width: 768px) {
-        background-color: #fff;
-       
-      } 
+     
       @media screen and (max-width: 375px) {
         align-items: center;
-        width: 335px;
-        margin-right:117px;
+        background-color: #fff;
+        grid-template-columns: 1fr; /* Change to a single column */
+        padding-top: 15px;
+        margin:0;
       }
 
     }
@@ -35,33 +30,27 @@
       cursor: pointer;
       overflow: hidden; /* Ajoutez ceci pour cacher le fond gris */
       background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-      @media (max-width: 992px) {
-        width: 356px;
-        height: 340px;
-        margin: 20px auto;
-    }
-      @media (max-width: 375px) {
-       
-    } 
-}
-    .thumb::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 370px;
-      height: 100%;
-      background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); 
-      overflow: hidden; /* Ajoutez ceci pour cacher le fond gris */
-      @media (max-width: 992px) {
-        width: 370px;
-        height: 340px;
-        
-        
-    }
-    
       
-  }
+      transform: translateX(20px);
+      
+      @media (max-width: 375px) {
+        width: 125%;
+        height: 269px;
+        margin-left: -50px;
+    } 
+     
+}
+.thumb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); 
+  overflow: hidden; /* Ajoutez ceci pour cacher le fond gris */ 
+  
+}
     
     .thumb img {
       border-radius: 10px;
@@ -69,6 +58,8 @@
       display: flex;
       width: 397px;
       height: 340px;
+       
+     
     
     }
     

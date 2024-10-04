@@ -3,6 +3,10 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-block: 0.5rem;
+    @media screen and (max-width: 375px){
+        margin: 0;
+        margin-left: -30px;
+    }
 
     // Styles for the tag inside the TagList
     .tag {

@@ -2,12 +2,6 @@
 
 
 
-.home{
-  @media screen and (max-width:768px){
-    margin:20px;
-  }
-
-}
 
 .about{
   @media screen and (max-width:768px){
@@ -18,31 +12,31 @@
   .header{
     
     display: flex;
-    margin:0 auto;
+    margin: auto;
     max-width: 1240px;
-    flex-direction: row;
-    width: 95%;
+    width: 90%;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    @media screen and (max-width: 768px) {
-      flex-direction: row; // Stack items vertically on smaller screens
-      
+    padding: 20px  ;
+    align-items: center;
     
-      @media screen and (max-width: 375px) {
-      width: 335px;
-      padding: 20px 0;
+    
+    @media screen and (max-width: 375px) {
+      padding: 0;
+      
+      
       }
-
-    }
   }
   
       @media screen and (max-width: 768px) {
         .header img{
           width: 145px;
         }
-       
+        @media screen and (max-width: 375px) {
+          .header img{
+            width: 70px;
+          }
+          
+          }
       
     }
    
@@ -55,16 +49,17 @@
       justify-content: space-around;
     
         @media screen and (max-width: 375px) {
-          gap: 40px;
+          
           align-items: center;
+        
 
       
         }
       }
 
   }
-  .navlik{
-    margin: auto;
+  .navlink{
+   
     @media screen and (max-width: 375px) {
       margin-right :20px;
     }
@@ -79,25 +74,23 @@
     margin-left: 50px;
     cursor: pointer;
     
-    @media screen and (max-width: 768px) {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      margin-left: 20px;
-    }
+    
     &.nav-underline {
       text-decoration-line: underline;
     }
-    @media screen and (max-width: 375px) {
-      flex-wrap: nowrap;
+    @media screen and (max-width: 576px) {
+     margin-left: 20px;
+     
+      font-size: 0.8rem;
       
     }
   }
 
   .header li {
-    margin: 0 10px;
+    
     list-style: none ;
     @media screen and (max-width: 375px) {
-      width: 19px;
+      width: 70px;
       
     }
   }

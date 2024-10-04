@@ -1,22 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 
 .home{
     display: flex;
     flex-direction: column;
     width: 95%;
-    margin: 0 auto;
+    margin:  auto;
     @media screen and (max-width: 375px) {
         align-items: center;
-        margin: 15px;
-        
-       
       }
   }
+
   
    
 
